@@ -1,0 +1,54 @@
+my_button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: darkcyan;
+    cursor: pointer;
+    transition: border-color 0.25s;
+
+  }
+  my_button:hover {
+    border-color: #646cff;
+  }
+  my_button:focus,
+  button:focus-visible {
+    outline: 10px auto -webkit-focus-ring-color;
+  }
+  .header_main{
+    width: 100%;
+    display: inline-block;
+  }
+  .footer_main{
+    width: 100%;
+    display: inline-block;
+  }
+  .labslist_main{
+    text-align: left;
+    align-self: center;
+    align-items: center;
+    height:inherit;
+    border: 1px solid green;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    /* background-color: #d69a1788; */
+  }
+  .content_main{
+    /* background-color: #646cff88; */
+    align-items: center;
+    align-self: center;
+    border: 1px solid gold;
+    border-radius: 15px;
+    width: 70%;
+    height:inherit;
+    margin-left: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+  .buttons{
+    align-self: center;
+    text-align: center;
+  }
