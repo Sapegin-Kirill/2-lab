@@ -11,7 +11,7 @@ my_button {
 
   }
   my_button:hover {
-    border-color: #646cff;
+    border-color: #166a4e;
   }
   my_button:focus,
   button:focus-visible {
@@ -30,10 +30,11 @@ my_button {
     align-self: center;
     align-items: center;
     height:inherit;
-    border: 1px solid green;
+    border: 1px solid rgb(62, 97, 128);
     border-radius: 15px;
     padding-top: 15px;
     padding-left: 15px;
+
     /* background-color: #d69a1788; */
   }
   .content_main{
@@ -47,8 +48,10 @@ my_button {
     margin-left: 15px;
     padding-top: 15px;
     padding-left: 15px;
+
   }
   .buttons{
     align-self: center;
     text-align: center;
   }
+ 
