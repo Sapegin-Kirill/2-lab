@@ -1,23 +1,20 @@
 import React from "react"
-import { useState } from 'react'
-import './comp.css'
-import my_button from "./my_button"
-
+import { Routes, Route } from 'react-router-dom'
+import Lab2 from '../pages/lab2'
+import Lab3 from '../pages/lab3'
+import Lab4 from '../pages/lab4'
+import Lab5 from "../pages/lab5";
 const Content = () => {
-    const [count, setCount] = useState(0)
     return (
         <div className="content_main">
-            <div className="buttons">
-                <my_button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </my_button>
-                <my_button onClick={() => alert("Hello world")}>
-                    Выводим alert
-                </my_button>
+            <div className="routs">
+                <Routes>
+                    <Route path='/lab2' element={<Lab2 />} />
+                    <Route path='/lab3' element={<Lab3 />} />
+                    <Route path='/lab4' element={<Lab4 />} />
+                    <Route path="/lab5" element={<Lab5 />} />
+                </Routes>
             </div>
-            <p>
-                Это работающие кнопки
-            </p>
         </div>
     )
 }

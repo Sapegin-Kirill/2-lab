@@ -26,8 +26,10 @@ my_button {
     display: inline-block;
   }
   .labslist_main{
+    display:inline-block;
     text-align: left;
     align-self: center;
+    border: solid 1px;
     align-items: center;
     height:inherit;
     border: 1px solid rgb(62, 97, 128);
@@ -38,12 +40,13 @@ my_button {
     /* background-color: #d69a1788; */
   }
   .content_main{
+    display:inline-block;
     /* background-color: #646cff88; */
     align-items: center;
     align-self: center;
     border: 1px solid gold;
     border-radius: 15px;
-    width: 70%;
+    width: 1000px;
     height:inherit;
     margin-left: 15px;
     padding-top: 15px;
