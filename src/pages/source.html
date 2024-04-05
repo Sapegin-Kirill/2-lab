@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab1</title>
+
+    <script>
+        //document.addEventListener("DOMcontentloader",console.log("Успех!"));
+        count = 1;
+        function button_incr() {
+            count++;
+            console.log("count =", count);
+            document.getElementById("incr_decr_id").innerHTML = count;
+        }
+
+        function button_decr() {
+            count--;
+            console.log("count =", count);
+            document.getElementById("incr_decr_id").innerHTML = count;
+        }
+        function admin_check(event) {
+            let login = event.target.login.value;
+            localStorage.setItem('login', login);
+            let password = event.target.password.value;
+            localStorage.setItem('password', password);
+            if (login == 'admin' && password == 'admin') {
+                alert("Успешный вход!");
+            }
+            else {
+                alert("Неверно введен логин или пароль!");
+            }
+        }
+
+            document.addEventListener("DOMContentLoaded", () => {
+                document.getElementById("decr_id").addEventListener("click", button_decr);
+                document.getElementById("subform").addEventListener("submit", event => admin_check(event));
+            });
+        
+    </script>
+</head>
+
+<body>
+    <h1>Сапегин Кирилл Евгеньевич</h1>
+    <button onclick="button_incr()">Инкремент</button>
+
+    <button id="decr_id">Декремент</button>
+
+    <div id="incr_decr_id"> Результат
+    </div>
+    <form name="subform" id="subform">
+        <p>Форма авторизации</p>
+        <input type="login" id="login" name="login">
+        <input type="password" id="password" name="password">
+        <button type="submit" id="sub_id">Войти</button>
+        <button type="reset">Очистить</button>
+    </form>
+</body>
+</html>
